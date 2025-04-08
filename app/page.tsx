@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import Link from "next/link"
 import { ArrowRight, Download, Github } from "lucide-react"
@@ -19,16 +19,16 @@ export default function LandingPage() {
           </div>
           <nav className="hidden md:flex gap-6">
             <Link href="#features" className="text-sm font-medium hover:text-gray-400 transition-colors">
-              &lt;Features&gt;
+              [Features]
             </Link>
             <Link href="#how-it-works" className="text-sm font-medium hover:text-gray-400 transition-colors">
-              &lt;How_It_Works&gt;
+              [How_It_Works]
             </Link>
             <Link href="#benefits" className="text-sm font-medium hover:text-gray-400 transition-colors">
-              &lt;Benefits&gt;
+              [Benefits]
             </Link>
             <Link href="#download" className="text-sm font-medium hover:text-gray-400 transition-colors">
-              &lt;Download&gt;
+              [Download]
             </Link>
           </nav>
           <div className="flex items-center gap-4">
@@ -44,10 +44,10 @@ export default function LandingPage() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-black border-b border-white/20">
+        <section className="w-full py-8 md:py-16 lg:py-24 bg-black border-b border-white/20">
           <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_500px]">
-              <div className="flex flex-col justify-center space-y-4">
+            <div className="grid gap-6 items-center lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_500px]">
+              <div className="flex flex-col space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                     [Protect Your Eyes
@@ -76,7 +76,7 @@ export default function LandingPage() {
                 </div>
               </div>
               <div className="flex items-center justify-center">
-                <div className="font-mono text-xs leading-none whitespace-pre text-white">
+                <div className="font-mono text-sm leading-none whitespace-pre text-white">
                   <InterfaceArt />
                 </div>
               </div>
@@ -210,122 +210,112 @@ export default function LandingPage() {
         {/* Benefits Section */}
         <section id="benefits" className="w-full py-12 md:py-24 lg:py-32 bg-black border-b border-white/20">
           <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-              <div className="flex flex-col justify-center space-y-4">
-                <div className="space-y-2">
-                  <div className="inline-flex items-center rounded-none border border-white px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 border-white bg-transparent text-white">
-                    [BENEFITS]
-                  </div>
-                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                    [Why Your Eyes Will Thank You]
-                  </h2>
-                  <p className="max-w-[600px] text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                    Regular screen breaks can significantly reduce digital eye strain and improve your overall eye
-                    health.
-                  </p>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-flex items-center rounded-none border border-white px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 border-white bg-transparent text-white">
+                  [BENEFITS]
                 </div>
-                <ul className="grid gap-6">
-                  <li className="flex items-start gap-2">
-                    <div className="flex h-6 w-6 items-center justify-center border border-white text-white shrink-0">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="lucide lucide-chevron-right"
-                      >
-                        <path d="m9 18 6-6-6-6" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="font-bold">[Reduced Eye Strain]</h3>
-                      <p className="text-sm text-gray-400">
-                        Regular breaks help reduce the symptoms of Computer Vision Syndrome.
-                      </p>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="flex h-6 w-6 items-center justify-center border border-white text-white shrink-0">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="lucide lucide-chevron-right"
-                      >
-                        <path d="m9 18 6-6-6-6" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="font-bold">[Improved Focus]</h3>
-                      <p className="text-sm text-gray-400">
-                        Short breaks can actually improve your concentration and productivity.
-                      </p>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="flex h-6 w-6 items-center justify-center border border-white text-white shrink-0">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="lucide lucide-chevron-right"
-                      >
-                        <path d="m9 18 6-6-6-6" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="font-bold">[Better Sleep]</h3>
-                      <p className="text-sm text-gray-400">
-                        Reducing eye strain during the day can lead to better sleep quality at night.
-                      </p>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="flex h-6 w-6 items-center justify-center border border-white text-white shrink-0">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="lucide lucide-chevron-right"
-                      >
-                        <path d="m9 18 6-6-6-6" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="font-bold">[Decreased Headaches]</h3>
-                      <p className="text-sm text-gray-400">
-                        Regular breaks can reduce the frequency and intensity of screen-related headaches.
-                      </p>
-                    </div>
-                  </li>
-                </ul>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">[Why Your Eyes Will Thank You]</h2>
+                <p className="max-w-[900px] text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Regular screen breaks can significantly reduce digital eye strain and improve your overall eye health.
+                </p>
               </div>
-              <div className="flex items-center justify-center">
-                <div className="font-mono text-xs leading-none whitespace-pre text-white">
-                  {/* ASCII art or content can go here */}
+              <div className="space-y-8 max-w-2xl mx-auto">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-8 w-8 items-center justify-center border border-white text-white shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="lucide lucide-chevron-right"
+                    >
+                      <path d="m9 18 6-6-6-6" />
+                    </svg>
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-xl font-bold">[Reduced Eye Strain]</h3>
+                    <p className="text-gray-400">
+                      Regular breaks help reduce the symptoms of Computer Vision Syndrome.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="flex h-8 w-8 items-center justify-center border border-white text-white shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="lucide lucide-chevron-right"
+                    >
+                      <path d="m9 18 6-6-6-6" />
+                    </svg>
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-xl font-bold">[Improved Focus]</h3>
+                    <p className="text-gray-400">
+                      Short breaks can actually improve your concentration and productivity.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="flex h-8 w-8 items-center justify-center border border-white text-white shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="lucide lucide-chevron-right"
+                    >
+                      <path d="m9 18 6-6-6-6" />
+                    </svg>
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-xl font-bold">[Better Sleep]</h3>
+                    <p className="text-gray-400">
+                      Reducing eye strain during the day can lead to better sleep quality at night.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="flex h-8 w-8 items-center justify-center border border-white text-white shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="lucide lucide-chevron-right"
+                    >
+                      <path d="m9 18 6-6-6-6" />
+                    </svg>
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-xl font-bold">[Decreased Headaches]</h3>
+                    <p className="text-gray-400">
+                      Regular breaks can reduce the frequency and intensity of screen-related headaches.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -513,4 +503,3 @@ export default function LandingPage() {
     </div>
   )
 }
-
